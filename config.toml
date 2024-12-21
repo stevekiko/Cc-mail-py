@@ -1,0 +1,35 @@
+[smtp]
+# SMTP服务器设置
+host = "smtp.example.com"
+port = 465
+
+# 发件人列表及对应密码
+from_list = [
+    { name = "Sender Name", email = "sender@example.com" }
+]
+
+[smtp.passwords]
+"sender@example.com" = "your_password_here"
+
+[setting]
+# 邮箱地址列表文件
+email_list = "emails.txt"
+# 邮件主题
+subject = "Your Email Subject"
+# 邮件内容文件
+email_content = "email.html"
+# 发信速度（每分钟N封），设为0表示不延迟
+limit = 30
+max_retries = 3
+retry_delay = 5
+connection_timeout = 30
+min_rate = 10
+max_rate = 100
+proxy_max_fails = 3
+
+[proxy]
+enabled = true
+proxy_list = [
+    # 代理格式：server:port:username:password
+    "proxy.example.com:port:username:password"
+]

@@ -1,0 +1,4 @@
+# 示例邮箱列表
+example1@gmail.com
+example2@outlook.com
+example3@yahoo.com
