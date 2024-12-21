@@ -18,7 +18,7 @@ email_list = "emails.txt"
 subject = "Your Email Subject"
 # 邮件内容文件
 email_content = "email.html"
-# 发信速度（每分钟N封），设为0表示不延迟
+# 发信速度（每分钟N封），设为0表示不延迟，min_rate最小速率/max_rate最大速率
 limit = 30
 max_retries = 3
 retry_delay = 5
@@ -30,6 +30,6 @@ proxy_max_fails = 3
 [proxy]
 enabled = true
 proxy_list = [
-    # 代理格式：server:port:username:password
+    # http/https代理格式：server:port:username:password
     "proxy.example.com:port:username:password"
 ]
